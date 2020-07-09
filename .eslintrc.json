@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "prefer-const": ["off", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": true
+  }],
+  "@typescript-eslint/no-inferrable-types": 0,
+  "@typescript-eslint/no-unused-vars": 0
+  }
+}

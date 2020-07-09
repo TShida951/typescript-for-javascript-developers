@@ -1,8 +1,8 @@
 export {};
 
-let name = 'TypeScript';
+// let name = "TypeScript";
 
-let isFinished: boolean = true;
+let isFinished = true;
 isFinished = false;
 // isFinished = 1;
-console.log({ isFinished })
+console.log({ isFinished });
